@@ -1,0 +1,1022 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-47="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47">
+        <rdfs:comment>prefix :&lt;http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+SELECT ?Parfum ?Rating ?Varian ?Harga ?Untuk ?KarakterWangi
+WHERE {?Parfum:targetGender ?untuk.
+	?Parfum:memilikiVarian ?Varian.
+	?Parfum:memilikiRating ?Rating.
+	?Parfum:memilikiHarga ?Harga. 
+	?Parfum:memilikiJenisAroma ?KarakterWangi. 
+}</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#dimilikiOleh -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#dimilikiOleh">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#diproduksiOleh -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#diproduksiOleh">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiJenisAroma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiJenisAroma">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memproduksi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memproduksi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#targetGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#targetGender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiGambar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiGambar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiHarga -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiHarga">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiKomentar1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiKomentar1">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiKomentar2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiKomentar2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiKomentar3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiKomentar3">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiNama -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiNama">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiVarian -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiVarian">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#memilikiVolume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Black"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Blue"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_MLXOX"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Black -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Black">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Blue"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_MLXOX"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Black_Sakura"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Braven"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#lavender"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#musk"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+        <untitled-ontology-47:memilikiGambar>Bravas Elite Black.jpeg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @albaqiaa25 : suka bgt</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @cokojr59 : Murah tapi ga murahan</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @wiwin.alfa : Wangi bangeeeet… thanks</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Bravas Elite Black</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_MLXOX"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Black_Sakura"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Braven"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#aquatic"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#citrus"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#woody"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+        <untitled-ontology-47:memilikiGambar>BRAVAS Elite Blue.jpg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @hilman1881 : Uda 2x coba wangi yg elite blue ini. Wangi nya soft, tp awet. cocok utk cwok yg kurang suka wangi yg trlalu kuat.</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @dimas.dk.dk : Mantaab,wangi nya enak soft banget,gag pake nyegrak pokoke...next pasti order lagi.. overall recommended</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @larasintadewi02 : Sudah 3x beli disini Packing aman Wangi nya enak ,soft ,bisa untuk pria dan wanita menurut ku</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Bravas Elite Blue</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_MLXOX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_MLXOX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Black_Sakura"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Braven"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#citrus"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fresh"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#woody"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+        <untitled-ontology-47:memilikiGambar>BRAVAS ML XOX.jpg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @suka_suko : barang aman dan recommended</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>-</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>-</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Bravas ML XOX</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Black_Sakura"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Braven"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Black_Sakura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Black_Sakura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Braven"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#elegan"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+        <untitled-ontology-47:memilikiGambar>Evangeline Black Sakura.jpg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @nursabdania : Wanginya wangi banget, boxnya aman</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @cantikaaasarii25 : ni wanginya enak banget sumpaahhhhhh ga nyengakkk, suka banget huhu baru pertama kali coba,
+ lumayan tahan lama wanginya. Pokonya suka bangetttt kalian wajib coba yg belum punya. Next bakal order lagi kalo udah abis</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @dindaap1499 : Asli suka banget sama wanginya pertama kali coba varian black sakura ini ternyata lebih manis dan seger juga wanginya , 
+untuk kalian yang suka wangwangian soft dan manis bisa coba si black sakura ini dijamin bakal langsung jatuh cinta sama wanginya , 
+harga worth to buy sekali</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Evangeline Black Sakura</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Braven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Braven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#musk"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#woody"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+        <untitled-ontology-47:memilikiGambar>Evangeline Braven.jpeg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @juliesiregar : Udah sering pakai parfum ini untuk suami pakai sehari2 buat kerja. Aromanya lumayan enak dan tahan lama. Pengemasan rapi,aman sampai tujuan.</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @pixmaart : Selalu bilang terima kasih pesanan sudah sampai botol kaca isi 100 ml  wangi kuat sekali daya tahan belum tahu. Sekian</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Evangeline Braven</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVarian>Shopee @lia091403 : Wangiiii nya bener-bener harum sekali ini saya order yang kedua kali nya, ketahanan harum wangi nya  dipertahankan yaa. Terimakasih</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline_Christian_Jornald">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Evangeline"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#masculine"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strong"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+        <untitled-ontology-47:memilikiGambar>Evangeline Christian Jornald.jpeg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">27.500</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @inul.understand : Wanginya kalem, worth it lah untuk harga segitu</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @dzul.haidar09 : Wanginya kalem banget dan tidak menyengat sama sekali</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @casalsabila_: Pleaaseee help wanginya enaaak bangeeett. 
+sempet ragu mau beli karna pertama kali nyoba ini parfum dan ga nyeseell yaallah pengen nyetok banyak tapi gaada duit. sumpah wanginya cowo banget maskulin cool , bau cowo cowo ganteng kaya raya, padahal gue cewe tapi beli parfum cowo begini demen.</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Evangeline Christian Jornald</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Candu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fruity"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#sweet"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+        <untitled-ontology-47:memilikiGambar>Hambel Candu.png</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @dwiislamiea : suka banget sama candu ini, wanginya soft, wangi cake, dengan ketahanan 7 jam kurang lebih</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @rian.mh : Wanginya soft, fresh dan enak deh. Ketahanan nya di indoor kira kira 6 jam</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @irmaakur : Biasanya beli cuddle tp krn sblmnya dapet tester candu dan baunya beneran elegan dan tahan bgt seharian dr pagi smpe pulang kantor dibadan, akrnya order kedua kali beli candu jg buat ganti2an make nya sm cuddle. Love it</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Hambel Candu (Cantik dan Lugu)</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Cuddle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fresh"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fruity"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#unisex"/>
+        <untitled-ontology-47:memilikiGambar>Hambel Cuddle.jpg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee : @ficaramel : Wanginya enak cocok banget, sudah dicoba di malam hari,  pake besoknya masih nempel baunya, worth it!!!</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee : @fitrimeydiyy : Wanginya enakkk, tapi menurut ku cuddle lebih cocok buat cowo sih.</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Twiiter @Cindianaaaa : ini nder, Awet banget. Dipake pagi, trus siangnya dorong motor karena mogok, aku masih nyium wanginya. Pernah nyoba pake buat tidur. Waktu bangun masih wangi juga.</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Hambel Cuddle ( Cute dan Bandel )</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Oliver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cofee"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#vanilla"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#unisex"/>
+        <untitled-ontology-47:memilikiGambar>Hambel Oliver.jpeg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @nandarezkys : Lain kali bakal coba wangi yang lain seneng banget dapet bonus cuddle sama candu yeayy</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee : @fitrimeydiyy : Wanginya enak, manis banget. Awal disemprot strong sih wanginya.</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @racha.safira27 : Wanginya enak banget  pokonya!!!!, tahan lama banget.</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Hambel Oliver</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel_Tabrani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Hambel"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#charismaty"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#manly"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+        <untitled-ontology-47:memilikiGambar>Hambel Tabrani.jpeg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @horizon.footwear : wanginya cool dan sangat cocok untuk pria. Packingnya mewah dan sesuai.</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @gariskhatulistw : untuk aroma yang ini bikin pusing, aku beli untuk temenku eh dia gasuka. Pas di semprot menohok banget di hidung, lumayan bikin pusing.</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>Shopee @rian.mh : Wanginya manly banget, bikin tambah PD. Ketahanannya di indoor bisa 8jam, Packingnya luar biasa aman.</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Hambel Tabrani ( Tampan dan Berani )</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Lareta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#apple"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#freesia"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pinneaple"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+        <untitled-ontology-47:memilikiGambar>PERFECTMENS LARETA.jpeg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @shooooo : Terimakasih kak, respon penjual cepat, pengemasan cepat, pengiriman ekspedisi cepat, harganya terjangkau 35.250 per botol, wanginya nyaman gak bikin pusing dan mual. Jangan ragu beli parfum perempuan disini.</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>-</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>-</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Perfectmens Lareta</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens_Renada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Perfectmens"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#bergamot"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pinneaple"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strawberry"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+        <untitled-ontology-47:memilikiGambar>PERFECTMENS RENADA.jpeg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>-</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>-</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>-</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Perfectmens Renada</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Merk"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille"/>
+        <untitled-ontology-47:memproduksi rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good_Vanille">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#coconut"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#musk"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#sweet"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#vanilla"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+        <untitled-ontology-47:memilikiGambar>SMELLSGOOD Vanille.jpg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">212.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @rskdian86 : Smellsgood tu emng enak bgt wanginyaaaaku baru 6 bulanan pake smellsgood udh abis brapa botol karnaemng wanginya tu ga alay pokonya sumpah kya udh ga mau ganti² mending langsung checkout klo udh mau abis dari pd ganti ga pake smellsgood</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @lintangmaharsi : suka wanginya! tapi ini  terlalu soft sihh. trus request minta tester beneran dikasih tester pake kertas2 kecil gidu. tau brand ini dulu awal bgt gara2 di post shadira, makin yakin gara2 banyak yg ngereview. oiya di aku ketahanannya 3-4jam aja. packagingnya gemes bgt!</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>-</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Smells Good Vanille</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Goods_Tulipe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Parfum"/>
+        <untitled-ontology-47:diproduksiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Smells_Good"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#soft"/>
+        <untitled-ontology-47:memilikiJenisAroma rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#spicy"/>
+        <untitled-ontology-47:targetGender rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+        <untitled-ontology-47:memilikiGambar>SMELLSGOOD Tulipe.jpg</untitled-ontology-47:memilikiGambar>
+        <untitled-ontology-47:memilikiHarga rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">212.000</untitled-ontology-47:memilikiHarga>
+        <untitled-ontology-47:memilikiKomentar1>Shopee @adne96 : Sumpah ini wangi nya aku banget, seger banget floral yg fresh gitu. Baru kali ini ketemu parfum yg aku banget biasanya susah 
+nyarinyaa. Worth it to buy sih</untitled-ontology-47:memilikiKomentar1>
+        <untitled-ontology-47:memilikiKomentar2>Shopee @aishadwii : Wangi banget parfum nya kaya wangi bunga semoga tahan lama ya parfum nya next beli lagi varian lain, adain diskon dong kak, ditunggu restock nya yg gemstone</untitled-ontology-47:memilikiKomentar2>
+        <untitled-ontology-47:memilikiKomentar3>-</untitled-ontology-47:memilikiKomentar3>
+        <untitled-ontology-47:memilikiNama>Smells Good Tulipe</untitled-ontology-47:memilikiNama>
+        <untitled-ontology-47:memilikiRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</untitled-ontology-47:memilikiRating>
+        <untitled-ontology-47:memilikiVarian>Eau de Parfume (EDP)</untitled-ontology-47:memilikiVarian>
+        <untitled-ontology-47:memilikiVolume rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</untitled-ontology-47:memilikiVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#acomatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#acomatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#alluring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#alluring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#almond -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#almond">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#amber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#amber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#aquatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#aquatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#bergamot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#bergamot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cewe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cewe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cowo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#charismaty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#charismaty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#citrus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#citrus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#coconut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#coconut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cofee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cofee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cowo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#cowo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#elegan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#elegan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#flower"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#freesia"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fresh"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fruity"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#lavender"/>
+        <untitled-ontology-47:dimilikiOleh rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Bravas_Elite_Black"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#flower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#flower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#freesia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#freesia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fresh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fresh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fruity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#fruity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#lavender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#lavender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#manly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#manly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#masculine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#masculine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#musk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#musk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pinneaple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pinneaple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#soft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#soft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#spicy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#spicy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strawberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strawberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#sweet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#sweet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#unisex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#unisex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#vanilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#vanilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#wanita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#woody -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#woody">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#Jenis_Aroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#floral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#manly"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#masculine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#musk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#pinneaple"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#soft"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#spicy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strawberry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#strong"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#sweet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#vanilla"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#woody"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

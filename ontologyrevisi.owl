@@ -1,0 +1,2110 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47">
+    <Prefix name="" IRI="http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>prefix :&lt;http://www.semanticweb.org/asus/ontologies/2024/8/untitled-ontology-47#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+SELECT ?Parfum ?Rating ?Varian ?Harga ?Untuk ?KarakterWangi
+WHERE {?Parfum:targetGender ?untuk.
+	?Parfum:memilikiVarian ?Varian.
+	?Parfum:memilikiRating ?Rating.
+	?Parfum:memilikiHarga ?Harga. 
+	?Parfum:memilikiJenisAroma ?KarakterWangi. 
+}</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jenis_Aroma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Merk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parfum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dimilikiOleh"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memproduksi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#targetGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiGambar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiHarga"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiKomentar1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiKomentar2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiKomentar3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiNama"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiVarian"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memilikiVolume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bravas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evangeline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hambel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perfectmens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acomatic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alluring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#almond"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#amber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aquatic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bergamot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cewe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#charismaty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#citrus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coconut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cofee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cowo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#elegan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#floral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#freesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fresh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fruity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lavender"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#manly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#masculine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#musk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pinneaple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#soft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spicy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#strawberry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#strong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sweet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unisex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vanilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wanita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#woody"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Merk"/>
+        <NamedIndividual IRI="#Bravas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Merk"/>
+        <NamedIndividual IRI="#Evangeline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Merk"/>
+        <NamedIndividual IRI="#Hambel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Merk"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Merk"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parfum"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#acomatic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#alluring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#almond"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#amber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#apple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#aquatic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#bergamot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#cewe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#charismaty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#citrus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#coconut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#cofee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#cowo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#elegan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#floral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#flower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#freesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#fresh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#fruity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#lavender"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#manly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#masculine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#musk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#pinneaple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#pria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#soft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#spicy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#strawberry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#strong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#sweet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#unisex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#vanilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#wanita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jenis_Aroma"/>
+        <NamedIndividual IRI="#woody"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#cewe"/>
+        <NamedIndividual IRI="#wanita"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#cowo"/>
+        <NamedIndividual IRI="#pria"/>
+    </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas"/>
+        <NamedIndividual IRI="#Evangeline"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas"/>
+        <NamedIndividual IRI="#Hambel"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline"/>
+        <NamedIndividual IRI="#Hambel"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Perfectmens"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#acomatic"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#alluring"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#almond"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#amber"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#apple"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#aquatic"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#bergamot"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cewe"/>
+        <NamedIndividual IRI="#cowo"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cewe"/>
+        <NamedIndividual IRI="#pria"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#charismaty"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#citrus"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#coconut"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cofee"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cowo"/>
+        <NamedIndividual IRI="#wanita"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#elegan"/>
+        <NamedIndividual IRI="#floral"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#floral"/>
+        <NamedIndividual IRI="#flower"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#floral"/>
+        <NamedIndividual IRI="#freesia"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#floral"/>
+        <NamedIndividual IRI="#fresh"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#floral"/>
+        <NamedIndividual IRI="#fruity"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#floral"/>
+        <NamedIndividual IRI="#lavender"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#floral"/>
+        <NamedIndividual IRI="#manly"/>
+        <NamedIndividual IRI="#masculine"/>
+        <NamedIndividual IRI="#musk"/>
+        <NamedIndividual IRI="#pinneaple"/>
+        <NamedIndividual IRI="#soft"/>
+        <NamedIndividual IRI="#spicy"/>
+        <NamedIndividual IRI="#strawberry"/>
+        <NamedIndividual IRI="#strong"/>
+        <NamedIndividual IRI="#sweet"/>
+        <NamedIndividual IRI="#vanilla"/>
+        <NamedIndividual IRI="#woody"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#pria"/>
+        <NamedIndividual IRI="#wanita"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Bravas"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Bravas"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Bravas"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#Bravas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#floral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#lavender"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#musk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <NamedIndividual IRI="#pria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#Bravas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#aquatic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#citrus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#woody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <NamedIndividual IRI="#pria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#Bravas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#citrus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#fresh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#woody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <NamedIndividual IRI="#pria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Evangeline"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Evangeline"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Evangeline"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#Evangeline"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#elegan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <NamedIndividual IRI="#wanita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#Evangeline"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#musk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#woody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <NamedIndividual IRI="#pria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#Evangeline"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#masculine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#strong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <NamedIndividual IRI="#pria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Hambel"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Hambel"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Hambel"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Hambel"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#Hambel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#fruity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#sweet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <NamedIndividual IRI="#wanita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#Hambel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#fresh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#fruity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <NamedIndividual IRI="#unisex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#Hambel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#cofee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#vanilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <NamedIndividual IRI="#unisex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#Hambel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#charismaty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#manly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <NamedIndividual IRI="#pria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#apple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#freesia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#pinneaple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <NamedIndividual IRI="#wanita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <NamedIndividual IRI="#Perfectmens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <NamedIndividual IRI="#bergamot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <NamedIndividual IRI="#pinneaple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <NamedIndividual IRI="#strawberry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <NamedIndividual IRI="#wanita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memproduksi"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <NamedIndividual IRI="#coconut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <NamedIndividual IRI="#musk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <NamedIndividual IRI="#sweet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <NamedIndividual IRI="#vanilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <NamedIndividual IRI="#wanita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <NamedIndividual IRI="#Smells_Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <NamedIndividual IRI="#floral"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <NamedIndividual IRI="#soft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <NamedIndividual IRI="#spicy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#targetGender"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <NamedIndividual IRI="#wanita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#dimilikiOleh"/>
+        <NamedIndividual IRI="#floral"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal>Bravas Elite Black.jpeg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal>Shopee @albaqiaa25 : suka bgt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal>Shopee @cokojr59 : Murah tapi ga murahan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal>Shopee @wiwin.alfa : Wangi bangeeeet… thanks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal>Bravas Elite Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Bravas_Elite_Black"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal>BRAVAS Elite Blue.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal>Shopee @hilman1881 : Uda 2x coba wangi yg elite blue ini. Wangi nya soft, tp awet. cocok utk cwok yg kurang suka wangi yg trlalu kuat.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal>Shopee @dimas.dk.dk : Mantaab,wangi nya enak soft banget,gag pake nyegrak pokoke...next pasti order lagi.. overall recommended</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal>Shopee @larasintadewi02 : Sudah 3x beli disini Packing aman Wangi nya enak ,soft ,bisa untuk pria dan wanita menurut ku</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal>Bravas Elite Blue</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Bravas_Elite_Blue"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal>BRAVAS ML XOX.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">44.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal>Shopee @suka_suko : barang aman dan recommended</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal>Bravas ML XOX</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Bravas_MLXOX"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal>Evangeline Black Sakura.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal>Shopee @nursabdania : Wanginya wangi banget, boxnya aman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal>Shopee @cantikaaasarii25 : ni wanginya enak banget sumpaahhhhhh ga nyengakkk, suka banget huhu baru pertama kali coba,
+ lumayan tahan lama wanginya. Pokonya suka bangetttt kalian wajib coba yg belum punya. Next bakal order lagi kalo udah abis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal>Shopee @dindaap1499 : Asli suka banget sama wanginya pertama kali coba varian black sakura ini ternyata lebih manis dan seger juga wanginya , 
+untuk kalian yang suka wangwangian soft dan manis bisa coba si black sakura ini dijamin bakal langsung jatuh cinta sama wanginya , 
+harga worth to buy sekali</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal>Evangeline Black Sakura</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Evangeline_Black_Sakura"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal>Evangeline Braven.jpeg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">28.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal>Shopee @juliesiregar : Udah sering pakai parfum ini untuk suami pakai sehari2 buat kerja. Aromanya lumayan enak dan tahan lama. Pengemasan rapi,aman sampai tujuan.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal>Shopee @pixmaart : Selalu bilang terima kasih pesanan sudah sampai botol kaca isi 100 ml  wangi kuat sekali daya tahan belum tahu. Sekian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal>Evangeline Braven</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal>Shopee @lia091403 : Wangiiii nya bener-bener harum sekali ini saya order yang kedua kali nya, ketahanan harum wangi nya  dipertahankan yaa. Terimakasih</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Evangeline_Braven"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal>Evangeline Christian Jornald.jpeg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27.500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal>Shopee @inul.understand : Wanginya kalem, worth it lah untuk harga segitu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal>Shopee @dzul.haidar09 : Wanginya kalem banget dan tidak menyengat sama sekali</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal>Shopee @casalsabila_: Pleaaseee help wanginya enaaak bangeeett. 
+sempet ragu mau beli karna pertama kali nyoba ini parfum dan ga nyeseell yaallah pengen nyetok banyak tapi gaada duit. sumpah wanginya cowo banget maskulin cool , bau cowo cowo ganteng kaya raya, padahal gue cewe tapi beli parfum cowo begini demen.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal>Evangeline Christian Jornald</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Evangeline_Christian_Jornald"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal>Hambel Candu.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">145.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal>Shopee @dwiislamiea : suka banget sama candu ini, wanginya soft, wangi cake, dengan ketahanan 7 jam kurang lebih</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal>Shopee @rian.mh : Wanginya soft, fresh dan enak deh. Ketahanan nya di indoor kira kira 6 jam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal>Shopee @irmaakur : Biasanya beli cuddle tp krn sblmnya dapet tester candu dan baunya beneran elegan dan tahan bgt seharian dr pagi smpe pulang kantor dibadan, akrnya order kedua kali beli candu jg buat ganti2an make nya sm cuddle. Love it</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal>Hambel Candu (Cantik dan Lugu)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Hambel_Candu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal>Hambel Cuddle.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">145.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal>Shopee : @ficaramel : Wanginya enak cocok banget, sudah dicoba di malam hari,  pake besoknya masih nempel baunya, worth it!!!</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal>Shopee : @fitrimeydiyy : Wanginya enakkk, tapi menurut ku cuddle lebih cocok buat cowo sih.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal>Twiiter @Cindianaaaa : ini nder, Awet banget. Dipake pagi, trus siangnya dorong motor karena mogok, aku masih nyium wanginya. Pernah nyoba pake buat tidur. Waktu bangun masih wangi juga.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal>Hambel Cuddle ( Cute dan Bandel )</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Hambel_Cuddle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal>Hambel Oliver.jpeg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">145.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal>Shopee @nandarezkys : Lain kali bakal coba wangi yang lain seneng banget dapet bonus cuddle sama candu yeayy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal>Shopee : @fitrimeydiyy : Wanginya enak, manis banget. Awal disemprot strong sih wanginya.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal>Shopee @racha.safira27 : Wanginya enak banget  pokonya!!!!, tahan lama banget.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal>Hambel Oliver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Hambel_Oliver"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal>Hambel Tabrani.jpeg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">145.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal>Shopee @horizon.footwear : wanginya cool dan sangat cocok untuk pria. Packingnya mewah dan sesuai.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal>Shopee @gariskhatulistw : untuk aroma yang ini bikin pusing, aku beli untuk temenku eh dia gasuka. Pas di semprot menohok banget di hidung, lumayan bikin pusing.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal>Shopee @rian.mh : Wanginya manly banget, bikin tambah PD. Ketahanannya di indoor bisa 8jam, Packingnya luar biasa aman.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal>Hambel Tabrani ( Tampan dan Berani )</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Hambel_Tabrani"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal>PERFECTMENS LARETA.jpeg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal>Shopee @shooooo : Terimakasih kak, respon penjual cepat, pengemasan cepat, pengiriman ekspedisi cepat, harganya terjangkau 35.250 per botol, wanginya nyaman gak bikin pusing dan mual. Jangan ragu beli parfum perempuan disini.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal>Perfectmens Lareta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Perfectmens_Lareta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal>PERFECTMENS RENADA.jpeg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal>Perfectmens Renada</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Perfectmens_Renada"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal>SMELLSGOOD Vanille.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">212.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal>Shopee @rskdian86 : Smellsgood tu emng enak bgt wanginyaaaaku baru 6 bulanan pake smellsgood udh abis brapa botol karnaemng wanginya tu ga alay pokonya sumpah kya udh ga mau ganti² mending langsung checkout klo udh mau abis dari pd ganti ga pake smellsgood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal>Shopee @lintangmaharsi : suka wanginya! tapi ini  terlalu soft sihh. trus request minta tester beneran dikasih tester pake kertas2 kecil gidu. tau brand ini dulu awal bgt gara2 di post shadira, makin yakin gara2 banyak yg ngereview. oiya di aku ketahanannya 3-4jam aja. packagingnya gemes bgt!</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal>Smells Good Vanille</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Smells_Good_Vanille"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiGambar"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal>SMELLSGOOD Tulipe.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiHarga"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">212.000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal>Shopee @adne96 : Sumpah ini wangi nya aku banget, seger banget floral yg fresh gitu. Baru kali ini ketemu parfum yg aku banget biasanya susah 
+nyarinyaa. Worth it to buy sih</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal>Shopee @aishadwii : Wangi banget parfum nya kaya wangi bunga semoga tahan lama ya parfum nya next beli lagi varian lain, adain diskon dong kak, ditunggu restock nya yg gemstone</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal>-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiNama"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal>Smells Good Tulipe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiRating"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVarian"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal>Eau de Parfume (EDP)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#memilikiVolume"/>
+        <NamedIndividual IRI="#Smells_Goods_Tulipe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#targetGender"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#dimilikiOleh"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#memproduksi"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dimilikiOleh"/>
+        <Class IRI="#Jenis_Aroma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <Class IRI="#Parfum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <Class IRI="#Parfum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memproduksi"/>
+        <Class IRI="#Merk"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#targetGender"/>
+        <Class IRI="#Parfum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dimilikiOleh"/>
+        <Class IRI="#Parfum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#diproduksiOleh"/>
+        <Class IRI="#Merk"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memilikiJenisAroma"/>
+        <Class IRI="#Jenis_Aroma"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memproduksi"/>
+        <Class IRI="#Parfum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#targetGender"/>
+        <Class IRI="#Gender"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiGambar"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiHarga"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiNama"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiRating"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiVarian"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#memilikiVolume"/>
+        <Class IRI="#Parfum"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiGambar"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiHarga"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiKomentar1"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiKomentar2"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiKomentar3"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiNama"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiRating"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiVarian"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memilikiVolume"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <form method="POST" action="{{ url_for('search') }}">
+            <input type="text" name="search_query" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+        <form method="POST" action="{{ url_for('filter_by_price') }}">
+            <input type="number" name="min_price" placeholder="Min Price" min="0">
+            <input type="number" name="max_price" placeholder="Max Price" min="0">
+            <button type="submit">Filter by Price</button>
+        </form>
+        <div class="login-links">
+            <a href="#">About Us</a>
+        </div>
+    </header>
+    <main>
+        <h1>Filtered Results by Price</h1>
+        <div class="results-container">
+            {% if perfumes %}
+                {% for parfum in perfumes %}
+                <div class="result-item">
+                    <img src="{{ url_for('static', filename='img/' + parfum.Gambar) }}" alt="Foto Parfum">
+                    <h2>{{ parfum.Jenis_Parfum }}</h2>
+                    <p>Rating: {{ parfum.Rating }}</p>
+                    <p>Harga: {{ parfum.Harga }}</p>
+                    <p>Karakter Wangi: {{ parfum.Karakter_Wangi }}</p>
+                    <p>Gender untuk: {{ parfum.Jenis_Kelamin }}</p>
+                    <a href="{{ url_for('detail', jenis_parfum=parfum.Jenis_Parfum) }}">Detail</a>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>No perfumes found within the specified price range.</p>
+            {% endif %}
+        </div>
+    </main>
+
+    <footer>FOOTER</footer>
+</body>
+
+</html>

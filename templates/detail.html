@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Parfum</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <form method="POST" action="{{ url_for('search') }}">
+            <input type="text" name="search_query" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+        <form method="POST" action="{{ url_for('filter_by_price') }}">
+            <input type="number" name="min_price" placeholder="Min Price" min="0">
+            <input type="number" name="max_price" placeholder="Max Price" min="0">
+            <button type="submit">Filter by Price</button>
+        </form>
+        <div class="login-links">
+            <!-- <a href="#">Login</a> -->
+            <a href="#">About Us</a>
+        </div>
+    </header>
+    <main>
+        <h1>{{ parfum.Jenis_Parfum }}</h1>
+        <div class="detail-container">
+            <div class="image-section">
+                <img src="{{ url_for('static', filename='img/' + parfum.Gambar) }}" alt="Foto Parfum">
+            </div>
+            <div class="info-section">
+                <p><strong>Rating:</strong> {{ parfum.Rating }}</p>
+                <p><strong>Harga:</strong> {{ parfum.Harga }}</p>
+                <p><strong>Karakter Wangi:</strong> {{ parfum.Karakter_Wangi }}</p>
+                <p><strong>Ukuran Botol:</strong> {{ parfum.Ukuran_Botol }}</p>
+                <p><strong>Jenis Parfum:</strong> {{ parfum.Varian }}</p>
+                <p><strong>Gender untuk :</strong> {{parfum.Jenis_Kelamin }} </p>
+                <div class="comments-section">
+                    <p><strong>Komentar 1:</strong><br>{{ parfum.Komentar_1 }}</p>
+                    <p><strong>Komentar 2:</strong><br>{{ parfum.Komentar_2 }}</p>
+                    <p><strong>Komentar 3:</strong><br>{{ parfum.Komentar_3 }}</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>FOOTER</footer>
+</body>
+
+</html>

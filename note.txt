@@ -1,0 +1,2 @@
+install seluruh requirement pada file requirements.txt
+gunakan program seperti berikut "pip install -r requirements.txt"

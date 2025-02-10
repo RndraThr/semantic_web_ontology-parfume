@@ -1,0 +1,5 @@
+Flask
+rdflib
+pandas
+openpyxl
+scikit-learn
